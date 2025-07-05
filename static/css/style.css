@@ -101,3 +101,32 @@ button:hover {
   color: #666;
   margin-top: 10px;
 }
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+  .app-container {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .chat-box {
+    height: 250px;
+    padding: 15px;
+  }
+
+  .chat-form {
+    flex-direction: column;
+  }
+
+  .chat-form input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
