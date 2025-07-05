@@ -1,0 +1,35 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF ChatBot</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>🤖 Ask Your PDF</h1>
+
+    <form id="uploadForm" enctype="multipart/form-data" class="card">
+      <label>📄 Upload your PDF:</label>
+      <input type="file" name="file" required>
+      <button type="submit">Upload PDF</button>
+    </form>
+
+    <div id="uploadStatus" class="status"></div>
+
+    <form id="questionForm" class="chat-form card">
+      <input type="text" name="question" placeholder="Ask something about the PDF..." required>
+      <button type="submit">Ask</button>
+    </form>
+
+    <div class="chat-box" id="chatBox">
+      <!-- Chat bubbles will appear here -->
+    </div>
+
+    <div class="loading" id="loading">Generating answer...</div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
